@@ -13,11 +13,22 @@ public abstract class BankAccount {
     public abstract void calculateInterest();
 
     public void deposit(double amount) {
-
+        if (amount < 0) {
+            System.out.println("Invalid amount");
+        }
+        balance += amount;
+        System.out.println("Deposited " + amount);
     }
 
     public void withdraw(double amount) {
-
+        if (amount < 0) {
+            System.out.println("Invalid amount");
+        }
+        if (amount > balance) {
+            System.out.println("Not enough balance");
+        }
+        balance -= amount;
+        System.out.println("Withdrawn " + amount);
     }
 
     //getters
