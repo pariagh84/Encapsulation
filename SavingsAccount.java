@@ -8,7 +8,7 @@ public class SavingsAccount extends BankAccount {
 
     @Override
     public void calculateInterest() {
-        deposit(interestRate * getBalance());
-        System.out.println("Interest is " + interestRate * getBalance() + " for Savings Account.");
+        System.out.println("Interest for " + getAccountHolderName() + " Savings Account: $" + interestRate * balance);
+        this.deposit(interestRate * balance);
     }
 }

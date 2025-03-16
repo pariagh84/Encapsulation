@@ -15,23 +15,27 @@ public abstract class BankAccount {
     public void deposit(double amount) {
         if (amount < 0) {
             System.out.println("Invalid amount");
+            return;
         }
         balance += amount;
-        System.out.println("Deposited " + amount);
+        System.out.println("Deposited $" + amount + " into " + accountHolderName + "'s account.");
+        System.out.println();
     }
 
     public void withdraw(double amount) {
         if (amount < 0) {
             System.out.println("Invalid amount");
+            return;
         }
         if (amount > balance) {
             System.out.println("Not enough balance");
+            return;
         }
         balance -= amount;
-        System.out.println("Withdrawn " + amount);
+        System.out.println("Withdrawn $" + amount);
     }
 
-    //getters
+    //Getters
     public double getBalance() {
         return balance;
     }
