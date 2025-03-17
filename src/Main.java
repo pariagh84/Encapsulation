@@ -4,14 +4,14 @@ public class Main {
         BankCustomers bank = new BankCustomers();
 
         //Create three TransactionAccounts
-        TransactionAccount transactionAccount1 = new TransactionAccount("4378921563", "Paria Gharakhani", 1000);
-        TransactionAccount transactionAccount2 = new TransactionAccount("9263817405", "Anisa Zaiem", 1500);
-        TransactionAccount transactionAccount3 = new TransactionAccount("5748291630", "Rozhin Jahanbakhsh", 2000);
+        BankAccount transactionAccount1 = new TransactionAccount("4378921563", "Paria Gharakhani", 1000);
+        BankAccount transactionAccount2 = new TransactionAccount("9263817405", "Anisa Zaiem", 1500);
+        BankAccount transactionAccount3 = new TransactionAccount("5748291630", "Rozhin Jahanbakhsh", 2000);
 
         //Create three SavingsAccounts
-        SavingsAccount savingsAccount1 = new SavingsAccount("3814759206", "Helia Khosravi", 5000);
-        SavingsAccount savingsAccount2 = new SavingsAccount("6928473150", "Amin Asgari", 3000);
-        SavingsAccount savingsAccount3 = new SavingsAccount("8471065923", "Sarira Tahmasebi", 2000);
+        BankAccount savingsAccount1 = new SavingsAccount("3814759206", "Helia Khosravi", 5000);
+        BankAccount savingsAccount2 = new SavingsAccount("6928473150", "Amin Asgari", 3000);
+        BankAccount savingsAccount3 = new SavingsAccount("8471065923", "Sarira Tahmasebi", 2000);
 
         //Add accounts to the bank
         bank.addAccount(transactionAccount1);
