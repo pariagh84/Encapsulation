@@ -1,3 +1,5 @@
+package Bank;
+
 public abstract class BankAccount {
 
     private final String accountNumber;
