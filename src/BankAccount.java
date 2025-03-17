@@ -18,8 +18,7 @@ public abstract class BankAccount {
             return;
         }
         balance += amount;
-        System.out.println("Deposited $" + amount + " into " + accountHolderName + "'s account.");
-        System.out.println();
+        System.out.println("Deposited $" + amount + " into " + accountHolderName + "'s account.\n");
     }
 
     public void withdraw(double amount) {
